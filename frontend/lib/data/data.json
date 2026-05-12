@@ -1,8 +1,8 @@
 {
   "profile": {
     "name": "Osama bin Adnan",
-    "title": "Web Developer & Agentic AI Engineer",
-    "subtitle": "Digital Marketing • Texttile Engineer • MBA Marketing",
+    "title": "FullStack Developer & Agentic AI Engineer",
+    "subtitle": "Texttile Engineer • MBA Marketing • Digital Marketing",
     "about": "I'm an AI Automation Engineer & Full Stack Developer building autonomous agent systems and modern web products. I design end-to-end solutions—from clean, responsive frontends to secure APIs and production deployments—focused on reliability, performance, and real business outcomes. My work spans agentic workflows (tool use, planning/execution loops, RAG, vector search), automation pipelines, and cloud-native app delivery with strong engineering practices. Based in Karachi, Pakistan.",
     "stats": [
       { "label": "Years Experience", "value": "2+" },
