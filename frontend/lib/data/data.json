@@ -1,0 +1,486 @@
+{
+  "profile": {
+    "name": "Osama bin Adnan",
+    "title": "Web Developer & Agentic AI Engineer",
+    "subtitle": "Digital Marketing • Texttile Engineer • MBA Marketing",
+    "about": "I'm an AI Automation Engineer & Full Stack Developer building autonomous agent systems and modern web products. I design end-to-end solutions—from clean, responsive frontends to secure APIs and production deployments—focused on reliability, performance, and real business outcomes. My work spans agentic workflows (tool use, planning/execution loops, RAG, vector search), automation pipelines, and cloud-native app delivery with strong engineering practices. Based in Karachi, Pakistan.",
+    "stats": [
+      { "label": "Years Experience", "value": "2+" },
+      { "label": "Projects Delivered", "value": "10+" },
+      { "label": "Technologies", "value": "20+" },
+      { "label": "AI Agents Deployed", "value": "5+" }
+    ],
+    "socials": [
+      { "platform": "email", "url": "mailto:imosamabinadnan@gmail.com", "label": "imosamabinadnan@gmail.com" },
+      { "platform": "linkedin", "url": "https://www.linkedin.com/in/osama-bin-adnan/", "label": "LinkedIn" },
+      { "platform": "github", "url": "https://github.com/OsamabinAdnan", "label": "GitHub" },
+      { "platform": "twitter", "url": "https://x.com/osamabinadnan1", "label": "Twitter/X" },
+      { "platform": "instagram", "url": "https://www.instagram.com/osamabinadnan/", "label": "Instagram" },
+      { "platform": "facebook", "url": "https://www.facebook.com/usama.adnan.733", "label": "Facebook" },
+      { "platform": "threads", "url": "https://www.threads.com/@osamabinadnan", "label": "Threads" }
+    ]
+  },
+  
+  "techStack": [
+    {
+      "name": "React",
+      "category": "frontend",
+      "logo": "/Techs-Logos/React.svg"
+    },
+    {
+      "name": "Next.js",
+      "category": "frontend",
+      "logo": "/Techs-Logos/Nextjs.svg"
+    },
+    {
+      "name": "TypeScript",
+      "category": "frontend",
+      "logo": "/Techs-Logos/TypeScript.svg"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "frontend",
+      "logo": "/Techs-Logos/TailwindCSS.svg"
+    },
+    {
+      "name": "Framer Motion",
+      "category": "frontend",
+      "logo": "/Techs-Logos/FramerLogo.svg"
+    },
+    {
+      "name": "GSAP",
+      "category": "frontend",
+      "logo": "/Techs-Logos/gsap.png"
+    },
+    {
+      "name": "Three.js",
+      "category": "frontend",
+      "logo": "/Techs-Logos/Threejs.svg"
+    },
+    {
+      "name": "HTML5",
+      "category": "frontend",
+      "logo": "/Techs-Logos/HTML5.svg"
+    },
+    {
+      "name": "CSS3",
+      "category": "frontend",
+      "logo": "/Techs-Logos/CSS3.svg"
+    },
+    {
+      "name": "JavaScript",
+      "category": "frontend",
+      "logo": "/Techs-Logos/JavaScript.svg"
+    },
+    {
+      "name": "Node.js",
+      "category": "backend",
+      "logo": "/Techs-Logos/Nodejs.svg"
+    },
+    {
+      "name": "Python",
+      "category": "backend",
+      "logo": "/Techs-Logos/Python.svg"
+    },
+    {
+      "name": "FastAPI",
+      "category": "backend",
+      "logo": "/Techs-Logos/FastAPI.svg"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "backend",
+      "logo": "/Techs-Logos/PostgresSQL.svg"
+    },
+    {
+      "name": "REST APIs",
+      "category": "backend",
+      "logo": "/Techs-Logos/RestAPI.png"
+    },
+    {
+      "name": "Docker",
+      "category": "devops",
+      "logo": "/Techs-Logos/Docker.svg"
+    },
+    {
+      "name": "Vercel",
+      "category": "devops",
+      "logo": "/Techs-Logos/Vercel.svg"
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "devops",
+      "logo": "/Techs-Logos/GitHubActions.svg"
+    },
+    {
+      "name": "CI/CD",
+      "category": "devops",
+      "logo": "/Techs-Logos/CICD.png"
+    },
+    {
+      "name": "Google Analytics",
+      "category": "digital-marketing",
+      "logo": "/Techs-Logos/GoogleAnalytics.png"
+    },
+    {
+      "name": "Google Ads",
+      "category": "digital-marketing",
+      "logo": "/Techs-Logos/google-ads.svg"
+    },
+    {
+      "name": "Facebook Ads",
+      "category": "digital-marketing",
+      "logo": "/Techs-Logos/facebook-ads.png"
+    },
+    {
+      "name": "SEO",
+      "category": "digital-marketing",
+      "logo": "/Techs-Logos/SEO.png"
+    },
+    {
+      "name": "Qdrant Vector Databases",
+      "category": "others",
+      "logo": "/Techs-Logos/qdrant.png"
+    },
+    {
+      "name": "RAG Systems",
+      "category": "others",
+      "logo": "/Techs-Logos/rag.png"
+    },
+    {
+      "name": "OpenAI Agent SDK",
+      "category": "ai",
+      "logo": "/Techs-Logos/openai.svg"
+    },
+    {
+      "name": "Supabase DB",
+      "category": "others",
+      "logo": "/Techs-Logos/supabase.webp"
+    },
+    {
+      "name": "Neon DB",
+      "category": "others",
+      "logo": "/Techs-Logos/neon.webp"
+    },
+    {
+      "name": "Sanity CMS",
+      "category": "others",
+      "logo": "/Techs-Logos/sanity.png"
+    },
+    {
+      "name": "WordPress",
+      "category": "digital-marketing",
+      "logo": "/Techs-Logos/wordpress.svg"
+    },
+    {
+      "name": "Shopify",
+      "category": "digital-marketing",
+      "logo": "/Techs-Logos/shopify.svg"
+    },
+    {
+      "name": "Claude Code CLI",
+      "category": "ai",
+      "logo": "/Techs-Logos/claude-ai.svg"
+    },
+    {
+      "name": "Gemini Code CLI",
+      "category": "ai",
+      "logo": "/Techs-Logos/Gemini-cli.png"
+    },
+    {
+      "name": "Qwen Code CLI",
+      "category": "ai",
+      "logo": "/Techs-Logos/Qwen-CLI.png"
+    },
+    {
+      "name": "OpenAI Codex CLI",
+      "category": "ai",
+      "logo": "/Techs-Logos/Codex-CLI.webp"
+    },
+    {
+      "name": "Lovable",
+      "category": "ai",
+      "logo": "/Techs-Logos/Lovable-color.png"
+    },
+    {
+      "name": "OpenClaw",
+      "category": "ai",
+      "logo": "/Techs-Logos/Openclaw.png"
+    },
+    {
+      "name": "OpenRouter",
+      "category": "ai",
+      "logo": "/Techs-Logos/OpenRouter.webp"
+    },
+    {
+      "name": "HuggingFace",
+      "category": "backend",
+      "logo": "/Techs-Logos/Huggingface.png"
+    },
+    {
+      "name": "Elementor",
+      "category": "digital-marketing",
+      "logo": "/Techs-Logos/Elementor.webp"
+    }
+  ],
+  
+  "projects": [
+    {
+      "id": "1",
+      "title": "CarPoint",
+      "description": "A sleek, responsive frontend for an automotive platform showcasing essential car parts and vehicles. Features a clean UI with intuitive navigation, hero banners, and a blog section for automotive content.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "deploymentUrl": "https://carspoint.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/CarPoint/CarPoint.png",
+      "mockupImageUrl": "/Project-Images/CarPoint/Carpoint-Desktop-Mobile.png"
+    },
+    {
+      "id": "2",
+      "title": "Scooty Pro",
+      "description": "A premium e-commerce landing page for high-performance electric scooters. Features a sleek UI, product carousels with hover effects, countdown timers, FAQs, and integration with WhatsApp for direct sales inquiries.",
+      "techStack": ["HTML", "Tailwind CSS", "Font Awesome 6", "Google Fonts", "JavaScript"],
+      "deploymentUrl": "https://scootypro.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/ScootyPro/ScootyPro.png",
+      "mockupImageUrl": "/Project-Images/ScootyPro/SccotyPro-Desktop-Mobile.png"
+    },
+    {
+      "id": "3",
+      "title": "FitZone Pro",
+      "description": "An e-commerce platform for fitness equipment and supplements featuring adjustable dumbbells, premium workout gear, and membership plans. Includes a product catalog with filtering, cart system, special offers (up to 30% off), and customer testimonials section.",
+      "techStack": ["HTML", "Tailwind CSS", "Font Awesome 6", "Google Fonts", "JavaScript"],
+      "deploymentUrl": "https://fitzone-pro.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/FitZonePro/FitZonePro.png",
+      "mockupImageUrl": "/Project-Images/FitZonePro/FitZonePro-Desktop-Mobile.png"
+    },
+    {
+      "id": "4",
+      "title": "Meeting AI | Extractor and Summarizer",
+      "description": "An AI-powered meeting notes processor that transforms transcripts into structured action items. Features real-time extraction of summaries, decisions, action items, and attendee lists. Built with Next.js, FastAPI, OpenAI Agents SDK, and Vercel.",
+      "techStack": ["Next.js 16", "React 19", "TypeScript", "TailwindCSS", "FastAPI", "UV", "Python", "OpenAI Agents SDK", "Vercel"],
+      "deploymentUrl": "https://meeting-ai-extractor-processor.vercel.app/",
+      "categories": ["fullstack", "ai"],
+      "imageUrl": "/Project-Images/MeetingAI/MeetingAI.png",
+      "mockupImageUrl": "/Project-Images/MeetingAI/MeetingAI-Desktop-Mobile.png"
+    },
+    {
+      "id": "5",
+      "title": "AI Proposal Writer | Cyberpunk Freelance Assistant",
+      "description": "An AI-powered proposal generator for freelancers that creates high-converting proposals for platforms like Upwork and Toptal. Features a cyberpunk-themed interface with automated generation of tailored content for client needs.",
+      "techStack": ["Next.js 16", "React 19", "TypeScript", "TailwindCSS", "FastAPI", "UV", "Python", "OpenAI Agents SDK", "Vercel", "Supabase Database", "Sonner", "Framer Motion", "GSAP", "Three.js", "Shadcn UI", "Docker"],
+      "deploymentUrl": "https://ai-proposal-writer-ten.vercel.app/",
+      "categories": ["fullstack","ai"],
+      "imageUrl": "/Project-Images/AIProposalWriter/AIProposalWriter.png",
+      "mockupImageUrl": "/Project-Images/AIProposalWriter/AIProposalWriter-Desktop-Mobile.png"
+    },
+    {
+      "id": "6",
+      "title": "Osama's Blog",
+      "description": "A sleek, dark-themed blog platform dedicated to Artificial Intelligence and Information Technology. Features a responsive article carousel, immersive reading experience, and a robust content management system powered by Sanity CMS.",
+      "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI", "Sanity"],
+      "deploymentUrl": "https://osamablogs-milestone3-assig.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/OsamasBlogs/Osama-Blogs.png",
+      "mockupImageUrl": "/Project-Images/OsamasBlogs/OsamasBlogs-Desktop-Mobile.png"
+    },
+    {
+      "id": "7",
+      "title": "BazarioX",
+      "description": "A premium fashion e-commerce platform with a clean, modern storefront. Features product browsing, category filtering, shopping cart functionality, and a polished UI designed for an exceptional shopping experience.",
+      "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI", "Sanity"],
+      "deploymentUrl": "https://bazariox-osamabinadnan.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/BazarioX/BazarioX.png",
+      "mockupImageUrl": "/Project-Images/BazarioX/BazarioX-Desktop-Mobile.png"
+    },
+    {
+      "id": "8",
+      "title": "Morent Car Rental",
+      "description": "A comprehensive car rental platform with user authentication, search functionality, booking management, and secure Stripe payments. Features a clean, modern dashboard with real-time availability and responsive design.",
+      "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI", "Sanity", "Clerk", "Stripe", "Radix UI"],
+      "deploymentUrl": "https://morentcarrentalservice.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/MorentCarRental/Morent-Car-App.png",
+      "mockupImageUrl": "/Project-Images/MorentCarRental/MorentCarRental-Desktop-Mobile.png"
+    },
+    {
+      "id": "9",
+      "title": "Pakistan Travel",
+      "description": "A travel exploration platform showcasing Pakistan's breathtaking landscapes, culture, and destinations. Features curated travel plans, places, restaurants, hotels, and shopping guides with an immersive visual experience.",
+      "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI"],
+      "deploymentUrl": "https://pakistantravels.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/PakistanTravel/Pakistan-Travel-App.png",
+      "mockupImageUrl": "/Project-Images/PakistanTravel/PakistanTravel-Desktop-Mobile.png"
+    },
+    {
+      "id": "10",
+      "title": "Portfolio Website Dark Theme",
+      "description": "A sleek, dark-themed personal portfolio website showcasing projects and skills. Features smooth animations, responsive design, and a modern UI built to impress visitors and potential employers.",
+      "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI"],
+      "deploymentUrl": "https://portfolio-website-figma.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/PortfolioDarkTheme/Portfolio-DarkTheme.png",
+      "mockupImageUrl": "/Project-Images/PortfolioDarkTheme/PortfolioDarkTheme-Desktop-Mobile.png"
+    },
+    {
+      "id": "11",
+      "title": "Portfolio Light Theme",
+      "description": "A bright, elegant alternative version of my personal portfolio with a light color scheme. Demonstrates responsive theming capabilities and polished typography while maintaining the same professional content and layout.",
+      "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI"],
+      "deploymentUrl": "https://imosamabinadnan-customcss.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/PortfolioLightTheme/Portfolio-LightTheme.png",
+      "mockupImageUrl": "/Project-Images/PortfolioLightTheme/PortfolioLightTheme-Desktop-Mobile.png"
+    },
+    {
+      "id": "12",
+      "title": "Weather App",
+      "description": "A real-time weather forecasting application with a clean, intuitive interface. Displays current conditions, forecasts, and weather details for any location using a responsive, mobile-first design.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "deploymentUrl": "https://forecast-today.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/WeatherApp/Weather-App.png",
+      "mockupImageUrl": "/Project-Images/WeatherApp/WeatherApp-Desktop-Mobile.png"
+    },
+    {
+      "id": "13",
+      "title": "Todo List App",
+      "description": "A lightweight task management application for organizing daily tasks. Features add, edit, delete, and mark-complete functionality with a simple, distraction-free interface.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "deploymentUrl": "https://todo-list-js-osamabinadnan.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/TodoListApp/Todo-App.png",
+      "mockupImageUrl": "/Project-Images/TodoListApp/TodoListApp-Desktop-Mobile.png"
+    },
+    {
+      "id": "14",
+      "title": "QR Code Generator App",
+      "description": "A quick and easy QR code generator that converts text, URLs, and other data into scannable QR codes instantly. Built with vanilla JavaScript for fast performance and zero dependencies.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "deploymentUrl": "https://qrcode-generator-osamabinadnan.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/QRCodeGenerator/QRCode-App.png",
+      "mockupImageUrl": "/Project-Images/QRCodeGenerator/QRCodeGenerator-Desktop-Mobile.png"
+    },
+    {
+      "id": "15",
+      "title": "Unit Converter",
+      "description": "A comprehensive unit conversion tool built with Python and Streamlit. Supports conversions across length, weight, temperature, speed, and more with an intuitive, real-time interface.",
+      "techStack": ["Python", "Streamlit"],
+      "deploymentUrl": "https://unitconverter-osamabinadnan.streamlit.app/",
+      "categories": ["fullstack"],
+      "imageUrl": "/Project-Images/UnitConverter/UnitConverter.png",
+      "mockupImageUrl": "/Project-Images/UnitConverter/UnitConverter-Desktop-Mobile.png"
+    },
+    {
+      "id": "16",
+      "title": "Password Generator and Strength Checker",
+      "description": "A security-focused tool that generates cryptographically strong passwords and evaluates their strength in real-time. Helps users create secure credentials with customizable length and complexity options.",
+      "techStack": ["Python", "Streamlit"],
+      "deploymentUrl": "https://passwordgenerator-and-strengthchecker-osamabinadnan.streamlit.app/",
+      "categories": ["fullstack"],
+      "imageUrl": "/Project-Images/PasswordGeneratorStrengthChecker/Password-Generator.png",
+      "mockupImageUrl": "/Project-Images/PasswordGeneratorStrengthChecker/PasswordGeneratorStrengthChecker-Desktop-Mobile.png"
+    },
+    {
+      "id": "17",
+      "title": "Github Profile Analyzer",
+      "description": "An AI-powered analysis tool that evaluates GitHub profiles for code quality, activity patterns, and repository insights. Provides actionable recommendations for improving developer presence and contribution habits.",
+      "techStack": ["Python", "Streamlit", "GitHub API", "OpenAI"],
+      "deploymentUrl": "https://git-profile-analyzer-osamabinadnan.streamlit.app/",
+      "categories": ["ai"],
+      "imageUrl": "/Project-Images/GithubProfileAnalyzer/GithubProfileAnalyzer.png",
+      "mockupImageUrl": "/Project-Images/GithubProfileAnalyzer/GithubProfileAnalyzer-Desktop-Mobile.png"
+    },
+    {
+      "id": "18",
+      "title": "Color Picker App",
+      "description": "A developer-friendly color selection tool that generates HEX, RGB, and HSL values in real-time. Features a visual palette, history tracking, and quick copy-to-clipboard functionality built with Next.js.",
+      "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS"],
+      "deploymentUrl": "https://color-picker-ten-woad.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/ColorPickerApp/ColorPicker.png",
+      "mockupImageUrl": "/Project-Images/ColorPickerApp/ColorPickerApp-Desktop-Mobile.png"
+    },
+    {
+      "id": "19",
+      "title": "Physical AI Humanoid Robotic Textbook",
+      "description": "An interactive, AI-enhanced digital textbook covering Physical AI and Humanoid Robotics. Built with Docusaurus and powered by vector search (Qdrant) for intelligent content navigation, with an integrated AI assistant for real-time Q&A on complex topics.",
+      "techStack": ["Docusaurus IO", "Neon DB", "OpenAI SDK", "Python", "Qdrant Vector DB"],
+      "deploymentUrl": "https://osamabinadnan.github.io/physical-ai-humanoid-robotic-book/",
+      "categories": ["fullstack", "ai"],
+      "imageUrl": "/Project-Images/PhysicalAIHumanoid/PhysicalAI-Textbook.png",
+      "mockupImageUrl": "/Project-Images/PhysicalAIHumanoid/PhysicalAIHumanoid-Desktop-Mobile.png"
+    },
+    {
+      "id": "20",
+      "title": "Taskify Todo App",
+      "description": "A smart task management application with an integrated AI chatbot assistant. Features animated UI with Framer Motion and GSAP, real-time collaboration, toast notifications, and AI-powered task suggestions for enhanced productivity.",
+      "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Python", "OpenAI SDK", "Neon DB", "Vercel", "Framer Motion", "GSAP", "Sonner"],
+      "deploymentUrl": "https://taskify-with-chatbot-osamabinadnan.vercel.app/",
+      "categories": ["fullstack", "ai"],
+      "imageUrl": "/Project-Images/TaskifyTodoApp/TaskifyTodoApp.png",
+      "mockupImageUrl": "/Project-Images/TaskifyTodoApp/TaskifyTodoApp-Desktop-Mobile.png"
+    },
+    {
+      "id": "21",
+      "title": "Executive Sales Dashboard",
+      "description": "A modern executive-level sales analytics dashboard designed to track KPIs, revenue trends, and regional performance at a glance. Features interactive charts, metric cards, and clean data visualization to support faster, data-driven business decisions.",
+      "techStack": ["HTML", "CSS", "JavaScript"],
+      "deploymentUrl": "https://exsalesdashboard.netlify.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/ExecutiveSalesDashboard/ExecutiveSalesDashboard.png",
+      "mockupImageUrl": "/Project-Images/ExecutiveSalesDashboard/ExecutiveSalesDashboard-Desktop-Mobile.png"
+    },
+    {
+      "id": "22",
+      "title": "Zyentic Luxury Ecommerce",
+      "description": "Heritage craftsmanship, reimagined for the modern wardrobe. A luxury ecommerce experience built for premium storytelling—featuring curated product collections, rich visuals, and a smooth browse-to-buy flow across devices.",
+      "techStack": ["Lovable"],
+      "deploymentUrl": "https://zyentic-luxury.lovable.app/",
+      "categories": ["fullstack"],
+      "imageUrl": "/Project-Images/Zynetic/Zyentic.png",
+      "mockupImageUrl": "/Project-Images/Zynetic/Zyentic-Desktop-Mobile.png"
+    }
+  ],
+  "experience": [
+    {
+      "id": "1",
+      "year": "2024-NOW",
+      "role": "Learning AI and IT at GIAIC Program",
+      "company": "Governor Initiative of AI and IT",
+      "description": "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech."
+    },
+    {
+      "id": "2",
+      "year": "2023-2024",
+      "role": "Certified Digital Marketing Professional",
+      "company": "Institute of Digital Marketing (IDM) Pakistan",
+      "description": "Mastered digital marketing strategies, SEO, SEM, social media marketing, and e-commerce growth. Gained expertise in AI-powered marketing tools and data-driven campaign optimization."
+    },
+    {
+      "id": "3",
+      "year": "2019-2023",
+      "role": "Marketing Merchandiser",
+      "company": "Feroze 1888 Textile Mills",
+      "description": "Managed key global clients including LIDL, H&M, Li & Fung, and Pepco. Handled end-to-end order execution, sample development, and on-time shipment coordination. Managed organic product certification via Control Union portal and H&M supplier portal operations."
+    },
+    {
+      "id": "4",
+      "year": "2015-2018",
+      "role": "Production Supervisor - Printing Department",
+      "company": "Yunus Textile Mills",
+      "description": "Oversaw complete printing production cycle and SOP implementation. Improved manufacturing processes for higher quality output, managed production floor operations, prepared work schedules, and maintained expertise in processes and equipment."
+    },
+    {
+      "id": "5",
+      "year": "2011-2015",
+      "role": "Management Trainee Officer - Local Dyeing",
+      "company": "Al-Karam Textile Mills",
+      "description": "Managed dyeing recipes, color matching, and production planning. Prepared liquor and dyestuff for fabric dyeing and chemical padding. Inspected fabric quality and operated panel control machines including Pad Steam and Pad Thermosol."
+    }
+  ]
+}
