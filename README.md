@@ -22,7 +22,7 @@ A modern, responsive portfolio showcasing professional experience, projects, and
 - **Framework**: FastAPI (Python 3.14+)
 - **Database**: Supabase (PostgreSQL)
 - **AI Agent**: OpenAI Agents SDK
-- **LLM Provider**: OpenRouter (inclusionai/ring-2.6-1t:free)
+- **LLM Provider**: OpenRouter (configure via MODEL_NAME env var)
 - **Package Manager**: uv
 
 ## 📁 Complete Project Structure

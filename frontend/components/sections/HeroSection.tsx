@@ -9,7 +9,7 @@ interface HeroSectionProps {
   isReady?: boolean;
 }
 
-const ROLES = ['AI ENGINEER', 'WEB DEVELOPER', 'DIGITAL MARKETER'] as const;
+const ROLES = ['AGENTIC AI DEV', 'WEB DEVELOPER', 'DIGITAL MARKETER'] as const;
 
 type RoleIndex = 0 | 1 | 2;
 

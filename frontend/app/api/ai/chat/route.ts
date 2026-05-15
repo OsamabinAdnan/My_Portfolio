@@ -73,7 +73,7 @@ Keep responses short (2-3 sentences max) unless asked for more detail.
       const projectNames = projects.map(p => p.title).slice(0, 3).join(', ');
       response = `I've built ${projects.length} projects including ${projectNames}. Each project showcases different aspects of my FullStack and AI capabilities. Would you like to know more about any specific project?`;
     } else if (lowerMessage.includes('ai') || lowerMessage.includes('agent') || lowerMessage.includes('agentic')) {
-      response = `As a CAARE-certified Agentic AI Engineer, I specialize in building autonomous AI agents using LangChain, CrewAI, and AutoGen. I've deployed ${profile.stats[3].value} AI agents to production!`;
+      response = `As an Agentic AI Developer, I can build autonomous AI agents using OpenAI Agents SDK and modern tool-using agent workflows. I've deployed ${profile.stats[3].value} AI agents to production!`;
     } else if (lowerMessage.includes('experience') || lowerMessage.includes('year') || lowerMessage.includes('background')) {
       response = `I have ${profile.stats[0].value} years of experience in FullStack development, complemented by specialized expertise in Agentic AI. I've delivered ${profile.stats[1].value} projects throughout my career.`;
     } else if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('reach')) {
@@ -81,7 +81,7 @@ Keep responses short (2-3 sentences max) unless asked for more detail.
     } else if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
       response = `Hello! I'm ${profile.name}. Feel free to ask me anything about my skills, projects, or experience. How can I help you today?`;
     } else {
-      response = `I'm ${profile.name}, a FullStack Developer & Agentic AI Engineer with ${profile.stats[0].value}+ years of experience. I specialize in building modern web applications and autonomous AI agents. What would you like to know?`;
+      response = `I'm ${profile.name}, a FullStack Developer & Agentic AI Developer with ${profile.stats[0].value}+ years of experience. I specialize in building modern web applications and autonomous AI agents. What would you like to know?`;
     }
 
     return NextResponse.json({ response });

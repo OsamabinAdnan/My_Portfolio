@@ -29,13 +29,13 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Osama bin Adnan | Agentic AI Engineer, Web Developer, Digital Marketer & Textile Engineer",
-  description: "AI Automation Engineer & Full Stack Developer building autonomous agent systems and modern web products. Learning and Specializing in agentic workflows, RAG systems, and cloud-native app delivery.",
-  keywords: ["FullStack Developer", "Agentic AI Engineer", "AI Automation", "Portfolio", "AI Agents", "React", "Next.js", "Python", "FastAPI", "Digital FTEs", "RAG Systems"],
+  title: "Osama bin Adnan | Agentic AI Developer, Web Developer, Digital Marketer & Textile Engineer",
+  description: "Agentic AI Developer & Full Stack Developer building autonomous agent systems and modern web products. Learning and Specializing in agentic workflows, RAG systems, and cloud-native app delivery.",
+  keywords: ["FullStack Developer", "Agentic AI Developer", "AI Automation", "Portfolio", "AI Agents", "React", "Next.js", "Python", "FastAPI", "Digital FTEs", "RAG Systems"],
   authors: [{ name: "Osama bin Adnan" }],
   openGraph: {
-    title: "Osama bin Adnan | Agentic AI Engineer, Web Developer, Digital Marketer & Textile Engineer",
-    description: "AI Automation Engineer, Web Developer, Digital Marketer & Textile Engineer building autonomous agent systems and modern web products",
+    title: "Osama bin Adnan | Agentic AI Developer, Web Developer, Digital Marketer & Textile Engineer",
+    description: "Agentic AI Developer, Web Developer, Digital Marketer & Textile Engineer building autonomous agent systems and modern web products",
     type: "website",
   },
 };
