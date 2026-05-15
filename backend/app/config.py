@@ -22,6 +22,8 @@ class Settings:
 
     max_questions_per_email_per_day: int
 
+    portfolio_data_url: str | None
+
 
 def get_settings() -> Settings:
     load_dotenv()
@@ -35,4 +37,6 @@ def get_settings() -> Settings:
         max_questions_per_email_per_day=int(
             os.getenv("CHAT_MAX_QUESTIONS_PER_EMAIL_PER_DAY", "5")
         ),
+        portfolio_data_url=os.getenv("PORTFOLIO_DATA_URL"),
     )
+

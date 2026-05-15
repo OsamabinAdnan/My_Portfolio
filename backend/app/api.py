@@ -54,42 +54,83 @@ class ChatMessageResponse(BaseModel):
     remaining: int
 
 
+_PORTFOLIO_CACHE: dict[str, object] | None = None
+_PORTFOLIO_CACHE_AT: float | None = None
+
+
 def _portfolio_context() -> str:
     import json
-    from pathlib import Path
+    import time
 
-    data_path = Path(__file__).parent.parent.parent / "frontend" / "lib" / "data" / "data.json"
+    ttl_seconds = 60 * 30
+    now = time.time()
+
+    global _PORTFOLIO_CACHE
+    global _PORTFOLIO_CACHE_AT
+
+    if _PORTFOLIO_CACHE is not None and _PORTFOLIO_CACHE_AT is not None:
+        if now - _PORTFOLIO_CACHE_AT < ttl_seconds:
+            portfolio_json = json.dumps(_PORTFOLIO_CACHE, separators=(",", ":"), ensure_ascii=False)
+            return _format_portfolio_context(portfolio_json)
+
+    if not settings.portfolio_data_url:
+        return "Portfolio context unavailable (PORTFOLIO_DATA_URL not set)."
 
     try:
-        with open(data_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-    except Exception:
-        return "Portfolio data is currently unavailable."
+        from urllib.request import Request, urlopen
 
-    # Convert to formatted JSON string
-    portfolio_json = json.dumps(data, indent=2)
+        req = Request(
+            settings.portfolio_data_url,
+            headers={
+                "User-Agent": "portfolio-chat-backend/1.0",
+                "Accept": "application/json",
+            },
+        )
 
+        with urlopen(req, timeout=10) as resp:
+            raw = resp.read().decode("utf-8")
+            data = json.loads(raw)
+
+        _PORTFOLIO_CACHE = data
+        _PORTFOLIO_CACHE_AT = now
+
+        portfolio_json = json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+        return _format_portfolio_context(portfolio_json)
+    except Exception as e:
+        return f"Portfolio context unavailable (failed to fetch): {type(e).__name__}"
+
+
+def _format_portfolio_context(portfolio_json: str) -> str:
     context = f"""=== PORTFOLIO DATA FOR OSAMA BIN ADNAN ===
 
 Below is the complete portfolio data in JSON format. Use this data to answer questions about Osama's professional background.
 
-```json
+PORTFOLIO_JSON:
 {portfolio_json}
-```
 
 === INSTRUCTIONS ===
 - Parse the JSON to find relevant information
-- The data includes: profile, techStack, projects, experience, agents, services, blog
 - For contact info: check profile.socials array
 - For work history: check experience array (sorted by recency)
 - For projects: check projects array with full descriptions and tech stacks
-- For technologies: check techStack array (grouped by category: frontend, backend, devops, digital-marketing, ai, others)
+- For technologies: check techStack array (grouped by category)
 - Always provide specific details from the data when available
-- If information is not in the JSON, say you don't have that information
+- If information is not in the JSON, say you don't have that information in the portfolio context
 
 Answer the user's question using only this portfolio data."""
 
     return context
+
+
+# Warm the cache best-effort at import time
+try:
+    _portfolio_context()
+except Exception:
+    pass
+
+
+
+
 
 
 @app.get("/")
