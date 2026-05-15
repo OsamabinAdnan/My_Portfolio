@@ -27,8 +27,8 @@ export function WorkProjects() {
       {selectedProject && (
         <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
       )}
-    <section id="work" className="py-24 px-6 relative z-10 bg-[#0a0a0a]">
-      <div className="max-w-[1600px] mx-auto">
+    <section id="work" className="py-24 px-6 lg:px-12 xl:px-16 relative z-10 bg-[#0a0a0a]">
+      <div className="max-w-[1280px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#a73dff] to-transparent" />
@@ -49,7 +49,7 @@ export function WorkProjects() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8"
           >
             {displayProjects.map((project, index) => (
               <ProjectCard

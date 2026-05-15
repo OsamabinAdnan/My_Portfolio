@@ -65,7 +65,7 @@ export function Footer() {
     <section
       id="contact"
       ref={footerRef}
-      className="relative py-20 px-6 bg-[#0a0a0a] overflow-hidden"
+      className="relative py-20 px-5 sm:px-7 md:px-8 lg:px-12 xl:px-16 bg-[#0a0a0a] overflow-hidden"
     >
       {/* Animated background gradient */}
       <div className="absolute inset-0 opacity-30">
@@ -73,7 +73,7 @@ export function Footer() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#a73dff]/20 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
 
-      <div className="max-w-[1600px] mx-auto relative z-10">
+      <div className="max-w-[1280px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto relative z-10">
         {/* Top border with gradient */}
         <div className="h-px bg-gradient-to-r from-transparent via-[#a73dff] to-transparent mb-16" />
 
@@ -86,7 +86,7 @@ export function Footer() {
         </div>
 
         {/* 3 columns grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 mb-16">
           {/* Left column - Contact Info */}
           <div className="footer-col space-y-8">
             <div className="group">
@@ -143,8 +143,8 @@ export function Footer() {
           </div>
 
           {/* Right column - About */}
-          <div className="footer-col md:text-right space-y-6">
-            <div className="flex md:justify-end">
+          <div className="footer-col lg:col-span-1 lg:text-right space-y-6">
+            <div className="flex lg:justify-end">
               <Link href="/work" className="swipe-button">
                 <span>Explore All Work</span>
               </Link>

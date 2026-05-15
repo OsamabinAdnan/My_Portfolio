@@ -79,7 +79,7 @@ export default function ChatWidget() {
       {/* Floating Button */}
       <motion.button
         onClick={handleFloatingButtonClick}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#a73dff] to-[#8b2fd9] shadow-lg shadow-[#a73dff]/30 transition-all hover:scale-110 hover:shadow-xl hover:shadow-[#a73dff]/50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#a73dff] to-[#8b2fd9] shadow-lg shadow-[#a73dff]/30 transition-all hover:scale-110 hover:shadow-xl hover:shadow-[#a73dff]/50"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         aria-label="Toggle chat"
@@ -95,7 +95,7 @@ export default function ChatWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-6 z-40 flex h-[500px] w-96 max-w-[calc(100vw-3rem)] flex-col overflow-hidden rounded-2xl border border-white/10 bg-black/95 shadow-2xl backdrop-blur-xl"
+            className="fixed bottom-24 right-4 sm:right-6 z-40 flex h-[70vh] max-h-[520px] min-h-[420px] w-[92vw] max-w-[24rem] flex-col overflow-hidden rounded-2xl border border-white/10 bg-black/95 shadow-2xl backdrop-blur-xl"
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b border-white/10 bg-gradient-to-r from-[#a73dff]/20 to-transparent px-6 py-4">
@@ -199,7 +199,7 @@ export default function ChatWidget() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ duration: 0.3, type: "spring", damping: 25 }}
-              className="fixed left-1/2 top-1/2 z-[70] flex h-[85vh] w-[90vw] max-w-4xl -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden rounded-2xl border border-white/10 bg-black/95 shadow-2xl backdrop-blur-xl md:h-[80vh] md:w-[800px]"
+              className="fixed left-1/2 top-1/2 z-[70] flex h-[88vh] w-[94vw] max-w-4xl -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden rounded-2xl border border-white/10 bg-black/95 shadow-2xl backdrop-blur-xl sm:h-[86vh] sm:w-[92vw] md:h-[82vh] md:w-[86vw] lg:w-[900px]"
             >
               {/* Header */}
               <div className="flex items-center justify-between border-b border-white/10 bg-gradient-to-r from-[#a73dff]/20 to-transparent px-6 py-4">

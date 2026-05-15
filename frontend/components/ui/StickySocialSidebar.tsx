@@ -32,7 +32,7 @@ export function StickySocialSidebar() {
       <div className="hidden lg:fixed lg:left-0 lg:top-1/2 lg:z-[60] lg:flex lg:-translate-y-1/2">
         <div
           className={`flex items-center transition-transform duration-300 ease-out ${
-            isDesktopOpen ? 'translate-x-0' : '-translate-x-[calc(100%-44px)]'
+            isDesktopOpen ? 'translate-x-0' : '-translate-x-[calc(100%-24px)]'
           }`}
         >
           <div className="flex items-center bg-gradient-to-r from-[#0a0a0a]/95 to-[#1a1a1a]/80 backdrop-blur-xl border border-purple-500/20 rounded-r-2xl shadow-[0_0_25px_rgba(167,61,255,0.25)]">
@@ -60,7 +60,7 @@ export function StickySocialSidebar() {
             <button
               type="button"
               onClick={() => setIsDesktopOpen((v) => !v)}
-              className="w-11 h-16 flex items-center justify-center text-white bg-gradient-to-br from-[#a73dff] to-[#a73dff] hover:from-[#a73dff]/50 hover:to-[#a73dff]/50 border-l border-[#a73dff] rounded-r-2xl transition-all duration-300 hover:shadow-[0_0_25px_rgba(167,61,255,0.4)]"
+              className="w-11 h-16 flex items-center justify-end text-white bg-gradient-to-br from-[#a73dff] to-[#a73dff] hover:from-[#a73dff]/50 hover:to-[#a73dff]/50 border-l border-[#a73dff] rounded-r-2xl transition-all duration-300 hover:shadow-[0_0_25px_rgba(167,61,255,0.4)]"
               aria-label={isDesktopOpen ? 'Close social sidebar' : 'Open social sidebar'}
             >
               {isDesktopOpen ? <ChevronLeft className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
@@ -73,7 +73,7 @@ export function StickySocialSidebar() {
       <div className="lg:hidden fixed left-0 top-1/2 z-[60] flex -translate-y-1/2">
         <div
           className={`flex items-center transition-transform duration-300 ease-out ${
-            isMobileOpen ? 'translate-x-0' : '-translate-x-[calc(100%-44px)]'
+            isMobileOpen ? 'translate-x-0' : '-translate-x-[calc(100%-20px)]'
           }`}
         >
           <div className="flex items-center bg-gradient-to-r from-[#0a0a0a]/95 to-[#1a1a1a]/80 backdrop-blur-xl border border-purple-500/20 rounded-r-xl shadow-[0_0_25px_rgba(167,61,255,0.25)]">
@@ -95,7 +95,7 @@ export function StickySocialSidebar() {
             <button
               type="button"
               onClick={() => setIsMobileOpen((v) => !v)}
-              className="w-11 h-14 flex items-center justify-center text-white bg-gradient-to-br from-[#a73dff] to-[#a73dff] hover:from-[#a73dff]/50 hover:to-[#a73dff]/50 border-l border-[#a73dff]/50 rounded-r-xl transition-all duration-300 hover:shadow-[0_0_25px_rgba(167,61,255,0.4)]"
+              className="w-11 h-14 flex items-center justify-end text-white bg-gradient-to-br from-[#a73dff] to-[#a73dff] hover:from-[#a73dff]/50 hover:to-[#a73dff]/50 border-l border-[#a73dff]/50 rounded-r-xl transition-all duration-300 hover:shadow-[0_0_25px_rgba(167,61,255,0.4)]"
               aria-label={isMobileOpen ? 'Close social sidebar' : 'Open social sidebar'}
             >
               {isMobileOpen ? <ChevronLeft className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}

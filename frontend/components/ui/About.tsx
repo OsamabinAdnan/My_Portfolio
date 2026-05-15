@@ -19,7 +19,7 @@ export function About() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
   return (
-    <section id="about-intro" ref={containerRef} className="py-24 px-6 relative z-10 bg-[#0a0a0a]">
+    <section id="about-intro" ref={containerRef} className="py-24 px-6 lg:px-12 xl:px-16 relative z-10 bg-[#0a0a0a]">
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 via-transparent to-purple-900/10 pointer-events-none" />
       
@@ -48,7 +48,7 @@ export function About() {
         ))}
       </div>
 
-      <div className="max-w-[1400px] mx-auto relative">
+      <div className="max-w-[1280px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto relative">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -66,7 +66,7 @@ export function About() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-center">
           {/* Left - About Text */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
@@ -143,8 +143,8 @@ export function About() {
             />
 
             {/* Spline 3D Avatar - Desktop */}
-            <div className="relative w-full h-[700px]">
-              <SplineAvatar className="absolute lg:right-[-30%] right-0 top-[-20%] lg:top-0" />
+            <div className="relative w-full h-[600px] xl:h-[700px]">
+              <SplineAvatar className="absolute right-0 top-[-20%] lg:top-0 lg:right-[-12%] xl:right-[-18%] 2xl:right-[-24%]" />
             </div>
           </motion.div>
 

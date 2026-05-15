@@ -11,18 +11,16 @@ export function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-6 left-6 z-[70] group"
+      className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-[70] group"
     >
       <span className="absolute inset-0 rounded-full bg-[#a73dff]/25 blur-xl opacity-70 group-hover:opacity-100 transition-opacity" />
 
-      <span className="relative w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#0a0a0a]/85 backdrop-blur-md border border-[#a73dff]/45 shadow-[0_0_30px_rgba(167,61,255,0.35)] flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+      <span className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#0a0a0a]/85 backdrop-blur-md border border-[#a73dff]/45 shadow-[0_0_30px_rgba(167,61,255,0.35)] flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
         <svg
-          width="26"
-          height="26"
           viewBox="0 0 32 32"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="text-[#a73dff] group-hover:text-white transition-colors"
+          className="h-6 w-6 text-[#a73dff] group-hover:text-white transition-colors"
         >
           <path
             fill="currentColor"

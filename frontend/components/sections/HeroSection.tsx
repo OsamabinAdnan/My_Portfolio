@@ -114,7 +114,7 @@ export function HeroSection({ isReady = true }: HeroSectionProps) {
   return (
     <section
       ref={heroRef}
-      className="min-h-screen flex flex-col justify-center px-6 py-20 relative overflow-hidden"
+      className="min-h-screen flex flex-col justify-center px-6 lg:px-12 xl:px-16 py-20 relative overflow-hidden"
     >
       {/* 3D Avatar - Fullscreen */}
       <div className="absolute inset-0 flex items-center justify-center" style={{ pointerEvents: 'auto' }}>
@@ -126,24 +126,21 @@ export function HeroSection({ isReady = true }: HeroSectionProps) {
         <div className="w-96 h-96 bg-purple-500/15 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-[1600px] mx-auto w-full relative z-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+      <div className="max-w-[1280px] xl:max-w-[1400px] mx-auto w-full relative z-20">
+        <div className="flex flex-col xl:flex-row xl:justify-between gap-10 xl:gap-14 items-center w-full">
           {/* Left - Name */}
-          <div className="text-center lg:text-left lg:col-span-1">
+          <div className="text-center xl:text-left xl:basis-[46%]">
             <h2 className="hero-hello text-xl md:text-2xl lg:text-3xl text-[#a73dff] mb-2 font-bold">
               Hello! I&apos;m
             </h2>
-            <h1 className="hero-name text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+            <h1 className="hero-name text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
               {profile.name.toUpperCase()}
             </h1>
           </div>
 
-          {/* Center - Avatar space (empty for spacing) */}
-          <div className="hidden lg:block"></div>
-
           {/* Right - Title */}
-          <div className="text-center lg:text-right lg:col-span-1">
-            <div className="hero-titles flex flex-col items-center lg:items-end">
+          <div className="text-center xl:text-right xl:basis-[46%]">
+            <div className="hero-titles flex flex-col items-center xl:items-end">
               <span className="text-lg md:text-xl lg:text-2xl text-[#a73dff]/70 mb-1 font-bold">
                 I&apos;m
               </span>
@@ -152,7 +149,7 @@ export function HeroSection({ isReady = true }: HeroSectionProps) {
                 <div className="role-aurora pointer-events-none absolute -inset-x-6 -inset-y-6 bg-[#a73dff]/10 blur-3xl" />
 
                 <h2
-                  className={`role-line role-line-0 text-3xl md:text-4xl lg:text-5xl font-bold transition-colors duration-300 ${
+                  className={`role-line role-line-0 text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold transition-colors duration-300 ${
                     isActive(0)
                       ? 'text-[#a73dff] drop-shadow-[0_0_16px_rgba(167,61,255,0.35)]'
                       : 'text-white/60'
@@ -161,7 +158,7 @@ export function HeroSection({ isReady = true }: HeroSectionProps) {
                   {ROLES[0]}
                 </h2>
                 <h2
-                  className={`role-line role-line-1 text-3xl md:text-4xl lg:text-5xl font-bold transition-colors duration-300 ${
+                  className={`role-line role-line-1 text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold transition-colors duration-300 ${
                     isActive(1)
                       ? 'text-[#a73dff] drop-shadow-[0_0_16px_rgba(167,61,255,0.35)]'
                       : 'text-white/60'
@@ -170,7 +167,7 @@ export function HeroSection({ isReady = true }: HeroSectionProps) {
                   {ROLES[1]}
                 </h2>
                 <h2
-                  className={`role-line role-line-2 text-3xl md:text-4xl lg:text-5xl font-bold transition-colors duration-300 ${
+                  className={`role-line role-line-2 text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold transition-colors duration-300 ${
                     isActive(2)
                       ? 'text-[#a73dff] drop-shadow-[0_0_16px_rgba(167,61,255,0.35)]'
                       : 'text-white/60'

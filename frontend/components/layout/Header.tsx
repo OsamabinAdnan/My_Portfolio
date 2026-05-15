@@ -56,12 +56,12 @@ export function Header() {
 
   return (
     <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#1a1a1a]">
-      <div className="max-w-[1600px] mx-auto px-6 py-4">
-        <div className="header-content flex items-center justify-between">
+      <div className="max-w-[1280px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 py-4">
+        <div className="header-content flex items-center justify-between lg:justify-start lg:gap-6">
           {/* Logo */}
           <Link href="/" className="group relative">
             <div className="flex items-center">
-              <span className="font-orbitron font-black text-2xl lg:text-3xl tracking-wider transition-all duration-300">
+              <span className="font-orbitron font-black text-2xl lg:text-2xl xl:text-3xl tracking-wider transition-all duration-300">
                 <span className="text-white">OSAMABINADNAN</span><span className="text-[#a73dff]">.</span>
               </span>
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#a73dff] group-hover:w-full transition-all duration-300"></div>
@@ -71,7 +71,7 @@ export function Header() {
           {/* Email - Desktop Only */}
           <a
             href={`mailto:${profile.socials.find(s => s.platform === 'email')?.url.replace('mailto:', '') || 'imosamabinadnan@gmail.com'}`}
-            className="!hidden lg:!block hover-link text-white text-sm"
+            className="!hidden xl:!block hover-link text-white text-sm"
           >
             <span className="hover-in">
               <span>{profile.socials.find(s => s.platform === 'email')?.label || 'imosamabinadnan@gmail.com'}</span>
@@ -80,7 +80,7 @@ export function Header() {
           </a>
 
           {/* Navigation - Desktop Only */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8">
             <div className="nav-item">
               <HoverLink href="#about-intro" text="ABOUT" />
             </div>
@@ -96,7 +96,7 @@ export function Header() {
           </nav>
 
           {/* Resume & Mobile Menu */}
-          <div className="hidden lg:flex items-center">
+          <div className="hidden lg:flex items-center ml-auto">
             <a
               href="/OsamabinAdnan_Resume.pdf"
               target="_blank"

@@ -36,11 +36,11 @@ export function TechStackTabs() {
   const colors = tabColors[activeTab];
 
   return (
-    <section className="py-24 px-6 relative bg-[#0a0a0a] min-h-[900px] md:min-h-[980px]">
+    <section className="py-24 px-5 sm:px-7 md:px-8 lg:px-12 xl:px-16 relative bg-[#0a0a0a] min-h-[900px] md:min-h-[980px]">
       {/* Celestial Orrery Background */}
       <CelestialOrrery />
 
-      <div className="max-w-[1600px] mx-auto relative z-10">
+      <div className="max-w-[1280px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto relative z-10">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-12">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#a73dff] to-transparent" />

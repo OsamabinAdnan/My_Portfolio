@@ -25,7 +25,7 @@ export default function WorkPage() {
       )}
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#1a1a1a]">
-        <div className="max-w-[1600px] mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-[1280px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 py-4 flex items-center justify-between">
           <Link href="/" className="inline-flex items-center gap-2 text-white hover:text-[#a73dff] transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Home
@@ -36,8 +36,8 @@ export default function WorkPage() {
       </header>
 
       {/* Main Content */}
-      <main className="pt-24 pb-24 px-6">
-        <div className="max-w-[1600px] mx-auto">
+      <main className="pt-24 pb-24 px-5 sm:px-7 md:px-8 lg:px-12 xl:px-16">
+        <div className="max-w-[1280px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto">
           {/* Section Header */}
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 uppercase">
@@ -65,7 +65,7 @@ export default function WorkPage() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8"
             >
               {filtered.map((project, index) => (
                 <ProjectCard
