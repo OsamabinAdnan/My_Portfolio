@@ -33,7 +33,7 @@ def get_settings() -> Settings:
         supabase_service_role_key=_env("SUPABASE_SERVICE_ROLE_KEY"),
         openrouter_api_key=_env("OPENROUTER_API_KEY"),
         base_url=_env("BASE_URL"),
-        model_name=os.getenv("MODEL_NAME", "inclusionai/ring-2.6-1t:free"),
+        model_name=os.getenv("MODEL_NAME", "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"),
         max_questions_per_email_per_day=int(
             os.getenv("CHAT_MAX_QUESTIONS_PER_EMAIL_PER_DAY", "5")
         ),
