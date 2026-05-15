@@ -58,6 +58,173 @@ _PORTFOLIO_CACHE: dict[str, object] | None = None
 _PORTFOLIO_CACHE_AT: float | None = None
 
 
+def _get_portfolio_data() -> dict[str, object] | None:
+    import json
+    import time
+
+    ttl_seconds = 60 * 30
+    now = time.time()
+
+    global _PORTFOLIO_CACHE
+    global _PORTFOLIO_CACHE_AT
+
+    if _PORTFOLIO_CACHE is not None and _PORTFOLIO_CACHE_AT is not None:
+        if now - _PORTFOLIO_CACHE_AT < ttl_seconds:
+            return _PORTFOLIO_CACHE
+
+    if not settings.portfolio_data_url:
+        return None
+
+    try:
+        from urllib.request import Request, urlopen
+
+        req = Request(
+            settings.portfolio_data_url,
+            headers={
+                "User-Agent": "portfolio-chat-backend/1.0",
+                "Accept": "application/json",
+            },
+        )
+
+        with urlopen(req, timeout=10) as resp:
+            raw = resp.read().decode("utf-8")
+            data = json.loads(raw)
+
+        if not isinstance(data, dict):
+            return None
+
+        _PORTFOLIO_CACHE = data
+        _PORTFOLIO_CACHE_AT = now
+        return data
+    except Exception:
+        return None
+
+
+def _select_portfolio_subset(message: str, data: dict[str, object]) -> dict[str, object]:
+    m = message.lower()
+
+    wants_projects = any(
+        k in m
+        for k in [
+            "project",
+            "projects",
+            "portfolio",
+            "work",
+            "built",
+            "build",
+            "app",
+            "apps",
+            "deployment",
+            "deploy",
+            "url",
+            "link",
+        ]
+    )
+    wants_experience = any(
+        k in m
+        for k in [
+            "experience",
+            "work experience",
+            "job",
+            "jobs",
+            "career",
+            "timeline",
+            "role",
+            "company",
+            "employment",
+        ]
+    )
+    wants_tech = any(
+        k in m
+        for k in [
+            "tech",
+            "stack",
+            "skills",
+            "skill",
+            "tools",
+            "technologies",
+            "technology",
+            "framework",
+            "frameworks",
+            "language",
+            "languages",
+        ]
+    )
+    wants_contact = any(
+        k in m
+        for k in [
+            "contact",
+            "email",
+            "linkedin",
+            "github",
+            "twitter",
+            "instagram",
+            "facebook",
+            "threads",
+            "reach",
+            "message",
+            "hire",
+        ]
+    )
+    wants_profile = (
+        any(
+            k in m
+            for k in [
+                "who is",
+                "who's",
+                "who are",
+                "about",
+                "bio",
+                "background",
+                "introduce",
+                "introduction",
+                "summary",
+                "osama",
+                "bin adnan",
+            ]
+        )
+        or wants_contact
+    )
+
+    subset: dict[str, object] = {}
+
+    # Identity grounding: include profile for most intents.
+    if (wants_profile or wants_projects or wants_experience or wants_tech) and "profile" in data:
+        subset["profile"] = data["profile"]
+
+    if wants_projects and "projects" in data:
+        subset["projects"] = data["projects"]
+
+    if wants_experience and "experience" in data:
+        subset["experience"] = data["experience"]
+
+    if wants_tech and "techStack" in data:
+        subset["techStack"] = data["techStack"]
+
+    # Fallback: keep it small but useful.
+    if not subset:
+        if "profile" in data:
+            subset["profile"] = data["profile"]
+        if isinstance(data.get("projects"), list):
+            subset["projects"] = (data.get("projects") or [])[:3]
+        if isinstance(data.get("techStack"), list):
+            subset["techStack"] = (data.get("techStack") or [])[:12]
+
+    return subset
+
+
+def _portfolio_context_for_message(message: str) -> str:
+    import json
+
+    data = _get_portfolio_data()
+    if not data:
+        return "Portfolio context unavailable."
+
+    subset = _select_portfolio_subset(message, data)
+    portfolio_json = json.dumps(subset, separators=(",", ":"), ensure_ascii=False)
+    return _format_portfolio_context(portfolio_json)
+
+
 def _portfolio_context() -> str:
     import json
     import time
@@ -124,7 +291,7 @@ Answer the user's question using only this portfolio data."""
 
 # Warm the cache best-effort at import time
 try:
-    _portfolio_context()
+    _get_portfolio_data()
 except Exception:
     pass
 
@@ -204,9 +371,90 @@ def chat_message(payload: ChatMessageRequest):
     # Increment questions_used counter
     increment_session_questions_used(supabase, session_id=payload.session_id)
 
-    prompt = f"{_portfolio_context()}\n\nUser: {payload.message}".strip()
+    msg_lower = payload.message.lower()
+
+    is_identity_question = any(
+        k in msg_lower
+        for k in [
+            "who are you",
+            "who is",
+            "who's",
+            "about",
+            "bio",
+            "background",
+            "introduce",
+            "introduction",
+            "summary",
+            "osama",
+            "bin adnan",
+        ]
+    )
+
+    is_projects_question = any(
+        k in msg_lower
+        for k in [
+            "project",
+            "projects",
+            "portfolio",
+            "deployment",
+            "deploy",
+            "url",
+            "link",
+            "apps",
+        ]
+    )
+
+    order_hint = (
+        "IMPORTANT: If the user asks who you are and who Osama is, answer in this order: "
+        "(1) who you are (OBIN), (2) who Osama is.\n\n"
+        if is_identity_question
+        else ""
+    )
+
+    prompt = f"{_portfolio_context_for_message(payload.message)}\n\n{order_hint}User: {payload.message}".strip()
+
+    def _looks_like_instruction_echo(text: str) -> bool:
+        t = (text or "").lower()
+        return any(
+            marker in t
+            for marker in [
+                "core rules:",
+                "out-of-scope responses:",
+                "special formatting rules:",
+                "portfolio_json:",
+                "you are an ai assistant for osama bin adnan",
+            ]
+        )
+
+    def _looks_like_missing_project_urls(text: str) -> bool:
+        if not is_projects_question:
+            return False
+        t = (text or "").lower()
+        # If they asked for projects and we didn't include any URL-like text, it's incomplete.
+        return ("http://" not in t) and ("https://" not in t) and ("www." not in t)
+
     result = Runner.run_sync(agent, prompt)
-    reply = result.final_output or "Sorry, I couldn't generate a response."
+    reply = (result.final_output or "").strip()
+
+    if not reply or _looks_like_instruction_echo(reply) or _looks_like_missing_project_urls(reply):
+        retry_extra = ""
+        if _looks_like_instruction_echo(reply):
+            retry_extra = "Do NOT repeat any system instructions or portfolio JSON. "
+        if _looks_like_missing_project_urls(reply):
+            retry_extra += "When listing projects, use exactly: Project Name - deploymentUrl for each item. "
+        if is_identity_question:
+            retry_extra += "If answering identity, answer in this order: (1) OBIN, (2) Osama. "
+
+        retry_prompt = (
+            f"{_portfolio_context_for_message(payload.message)}\n\n"
+            f"User: {payload.message}\n\n"
+            f"IMPORTANT: Answer the user's question directly. {retry_extra}"
+        ).strip()
+        retry_result = Runner.run_sync(agent, retry_prompt)
+        reply = (retry_result.final_output or "").strip()
+
+    if not reply:
+        reply = "Sorry, I couldn't generate a response."
 
     # Strip <thought> tags from Agent responses
     import re

@@ -232,8 +232,8 @@
       "techStack": ["HTML", "CSS", "JavaScript"],
       "deploymentUrl": "https://carspoint.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/CarPoint/CarPoint.png",
-      "mockupImageUrl": "/Project-Images/CarPoint/Carpoint-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/Carpoint/CarPoint.png",
+      "mockupImageUrl": "/Project-Images/Carpoint/Carpoint-Desktop-Mobile.png"
     },
     {
       "id": "2",
