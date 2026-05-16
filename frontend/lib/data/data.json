@@ -221,6 +221,21 @@
       "name": "Elementor",
       "category": "digital-marketing",
       "logo": "/Techs-Logos/Elementor.webp"
+    },
+    {
+      "name": "MCP Server",
+      "category": "ai",
+      "logo": "/Techs-Logos/mcp.png"
+    },
+    {
+      "name": "Shadcn UI",
+      "category": "frontend",
+      "logo": "/Techs-Logos/Shadcn.webp"
+    },
+    {
+      "name": "Spec-Kit-Plus",
+      "category": "ai",
+      "logo": "/Techs-Logos/SpecKit-Plus.webp"
     }
   ],
   
