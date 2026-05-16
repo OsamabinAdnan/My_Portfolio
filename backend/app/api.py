@@ -7,7 +7,7 @@ from pydantic import BaseModel, EmailStr, Field
 from agents import Runner
 
 from .agent import create_agent
-from .config import get_settings
+from .config import get_model_candidates, get_settings, is_transient_provider_error
 from .db import (
     count_user_messages_today_for_email,
     create_supabase_client,
@@ -20,7 +20,27 @@ from .db import (
 settings = get_settings()
 
 supabase = create_supabase_client(settings)
-agent = create_agent(settings)
+
+_model_candidates = get_model_candidates(settings)
+_agents = [create_agent(settings, model_name=m) for m in _model_candidates]
+
+
+def _run_with_model_failover(prompt: str):
+    last_exc: Exception | None = None
+
+    for a in _agents:
+        try:
+            return Runner.run_sync(a, prompt)
+        except Exception as e:
+            last_exc = e
+            if not is_transient_provider_error(e):
+                raise
+
+    if last_exc:
+        raise last_exc
+
+    raise RuntimeError("No agents configured")
+
 
 app = FastAPI(title="Portfolio Chat Backend")
 
@@ -223,6 +243,22 @@ def _portfolio_context_for_message(message: str) -> str:
     subset = _select_portfolio_subset(message, data)
     portfolio_json = json.dumps(subset, separators=(",", ":"), ensure_ascii=False)
     return _format_portfolio_context(portfolio_json)
+
+
+def _portfolio_context_full() -> str:
+    import json
+
+    data = _get_portfolio_data()
+    if not data:
+        return "Portfolio context unavailable."
+
+    portfolio_json = json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+    return _format_portfolio_context(portfolio_json)
+
+
+def _looks_like_missing_context_answer(text: str) -> bool:
+    t = (text or "").lower()
+    return "i don't have that information in the portfolio context" in t
 
 
 def _portfolio_context() -> str:
@@ -433,7 +469,7 @@ def chat_message(payload: ChatMessageRequest):
         # If they asked for projects and we didn't include any URL-like text, it's incomplete.
         return ("http://" not in t) and ("https://" not in t) and ("www." not in t)
 
-    result = Runner.run_sync(agent, prompt)
+    result = _run_with_model_failover(prompt)
     reply = (result.final_output or "").strip()
 
     if not reply or _looks_like_instruction_echo(reply) or _looks_like_missing_project_urls(reply):
@@ -450,8 +486,15 @@ def chat_message(payload: ChatMessageRequest):
             f"User: {payload.message}\n\n"
             f"IMPORTANT: Answer the user's question directly. {retry_extra}"
         ).strip()
-        retry_result = Runner.run_sync(agent, retry_prompt)
+        retry_result = _run_with_model_failover(retry_prompt)
         reply = (retry_result.final_output or "").strip()
+
+    if _looks_like_missing_context_answer(reply):
+        full_prompt = f"{_portfolio_context_full()}\n\n{order_hint}User: {payload.message}".strip()
+        full_result = _run_with_model_failover(full_prompt)
+        full_reply = (full_result.final_output or "").strip()
+        if full_reply:
+            reply = full_reply
 
     if not reply:
         reply = "Sorry, I couldn't generate a response."

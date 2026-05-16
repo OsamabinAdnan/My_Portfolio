@@ -6,11 +6,11 @@ from .config import Settings
 
 set_tracing_disabled(True)
 
-def create_agent(settings: Settings) -> Agent:
+def create_agent(settings: Settings, model_name: str | None = None) -> Agent:
     external_client = AsyncOpenAI(api_key=settings.openrouter_api_key, base_url=settings.base_url)
 
     model = OpenAIChatCompletionsModel(
-        model=settings.model_name,
+        model=model_name or settings.model_name,
         openai_client=external_client,
     )
 

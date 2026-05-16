@@ -225,8 +225,27 @@ export default function ChatWidget() {
               {/* Messages */}
               <div className="flex-1 space-y-4 overflow-y-auto px-6 py-4">
                 {messages.length === 0 && (
-                  <div className="flex h-full items-center justify-center text-center text-white/40">
-                    <p>Ask me anything about Osama's portfolio!</p>
+                  <div className="flex h-full flex-col items-center justify-center gap-6 text-center">
+                    <p className="text-white/50">Ask me anything about Osama's portfolio, or pick a quick question:</p>
+
+                    <div className="grid w-full max-w-[520px] grid-cols-1 gap-3 sm:grid-cols-2">
+                      {[
+                        "Who is Osama bin Adnan?",
+                        "Show me Osama's projects (with URLs).",
+                        "What tech stack does Osama use?",
+                        "Summarize Osama's experience.",
+                      ].map((q) => (
+                        <button
+                          key={q}
+                          type="button"
+                          disabled={isLoading || remaining <= 0}
+                          onClick={() => sendMessage(q)}
+                          className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-left text-sm text-white/90 transition-all hover:border-[#a73dff]/50 hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50"
+                        >
+                          {q}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 )}
 
