@@ -2,9 +2,9 @@
 
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 import { profile } from '@/lib/data/profile';
 import { Brain, Code, Rocket, Users } from 'lucide-react';
-import { SplineAvatar } from '@/components/ui/SplineAvatar';
 
 const statsIcons = [Brain, Code, Rocket, Users];
 
@@ -19,9 +19,9 @@ export function About() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
   return (
-    <section id="about-intro" ref={containerRef} className="py-24 px-6 lg:px-12 xl:px-16 relative z-10 bg-[#0a0a0a]">
+    <section id="about-intro" ref={containerRef} className="min-h-screen py-24 px-6 lg:px-12 xl:px-16 relative z-10 bg-[#0a0a0a]">
       {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 via-transparent to-purple-900/10 pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-b from-purple-900/10 via-transparent to-purple-900/10 pointer-events-none" />
       
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -58,11 +58,11 @@ export function About() {
           className="text-center mb-16"
         >
           <div className="flex items-center gap-4">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#a73dff] to-transparent" />
+            <div className="h-px flex-1 bg-linear-to-r from-transparent via-[#a73dff] to-transparent" />
             <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
               ABOUT <span className="text-[#a73dff]">ME</span>
             </h2>
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#a73dff] to-transparent" />
+            <div className="h-px flex-1 bg-linear-to-r from-transparent via-[#a73dff] to-transparent" />
           </div>
         </motion.div>
 
@@ -106,7 +106,7 @@ export function About() {
                       <Icon className="w-6 h-6 md:w-8 md:h-8 mx-auto sm:mx-0 lg:mx-0" />
                     </motion.div>
                     <motion.div
-                      className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#a73dff] to-purple-600 mb-1"
+                      className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#a73dff] to-purple-600 mb-1"
                       initial={{ scale: 0.5, opacity: 0 }}
                       whileInView={{ scale: 1, opacity: 1 }}
                       viewport={{ once: true }}
@@ -123,7 +123,7 @@ export function About() {
             </div>
           </motion.div>
 
-          {/* Right - 3D Spline Avatar - Desktop */}
+          {/* Right - Image Avatar - Desktop */}
           <motion.div
             className="relative hidden lg:block"
             initial={{ opacity: 0, x: 80, rotateY: -30 }}
@@ -134,7 +134,7 @@ export function About() {
           >
             {/* Glow effect */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-purple-500/30 via-purple-400/20 to-transparent rounded-3xl blur-3xl"
+              className="absolute inset-0 bg-linear-to-r from-purple-500/30 via-purple-400/20 to-transparent rounded-3xl blur-3xl"
               animate={{
                 scale: [1, 1.1, 1],
                 opacity: [0.3, 0.5, 0.3]
@@ -142,13 +142,29 @@ export function About() {
               transition={{ duration: 4, repeat: Infinity }}
             />
 
-            {/* Spline 3D Avatar - Desktop */}
-            <div className="relative w-full h-[600px] xl:h-[700px]">
-              <SplineAvatar className="absolute right-0 top-[-20%] lg:top-0 lg:right-[-12%] xl:right-[-18%] 2xl:right-[-24%]" />
+            {/* Image Avatar - Desktop */}
+            <div className="relative w-full h-[450px] xl:h-[550px] flex items-center justify-center">
+              <div className="relative w-full h-full max-w-[400px] xl:max-w-[480px] group">
+                <div className="relative w-full h-full rounded-full overflow-hidden">
+                  <Image
+                    src="/osama-about.png"
+                    alt="Osama bin Adnan"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+                {/* Hover overlay with name */}
+                <div className="absolute inset-0 rounded-full bg-black/70 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-xl xl:text-2xl font-bold text-white">
+                    Osama bin Adnan
+                  </h3>
+                </div>
+              </div>
             </div>
           </motion.div>
 
-          {/* Spline Avatar - Mobile (simplified) */}
+          {/* Image Avatar - Mobile */}
           <motion.div
             className="relative lg:hidden block h-[400px] mt-8"
             initial={{ opacity: 0, y: 50 }}
@@ -156,8 +172,22 @@ export function About() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <div className="relative w-full h-full">
-              <SplineAvatar className="w-full h-full" />
+            <div className="relative w-full h-full max-w-[400px] mx-auto group">
+              <div className="relative w-full h-full rounded-full overflow-hidden">
+                <Image
+                  src="/osama-about.png"
+                  alt="Osama bin Adnan"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              {/* Hover overlay with name */}
+              <div className="absolute inset-0 rounded-full bg-black/70 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-xl font-bold text-white">
+                  Osama bin Adnan
+                </h3>
+              </div>
             </div>
           </motion.div>
         </div>
