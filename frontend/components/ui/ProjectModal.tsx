@@ -13,7 +13,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] flex items-center justify-center p-4 sm:p-6"
+        className="fixed inset-0 bg-black/80 backdrop-blur-sm z-100 flex items-center justify-center p-4 sm:p-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -22,7 +22,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
       >
         {/* Modal Container - Fits within viewport on all screens */}
         <motion.div
-          className="relative bg-[#111111] border border-[#a73dff] rounded-xl lg:rounded-2xl shadow-2xl flex flex-col w-full max-h-[85vh] max-w-6xl overflow-hidden mt-8 lg:mt-0"
+          className="relative bg-[#111111] border border-[#a73dff] rounded-xl lg:rounded-2xl shadow-2xl flex flex-col w-full max-h-[85vh] max-w-6xl overflow-hidden mt-10 lg:mt-0"
           initial={{ scale: 0.95, y: 20, opacity: 0 }}
           animate={{ scale: 1, y: 0, opacity: 1 }}
           exit={{ scale: 0.95, y: 20, opacity: 0 }}
@@ -47,7 +47,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div className="flex-1 overflow-y-auto custom-scrollbar">
             <div className="flex flex-col lg:flex-row min-h-full">
               {/* Left/Top Area - Image Showcase */}
-              <div className="w-full lg:w-3/5 bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] relative flex items-center justify-center min-h-[200px] sm:min-h-[240px] lg:min-h-[350px] border-b lg:border-b-0 lg:border-r border-[#2a2a2a] p-4 sm:p-5 lg:p-8">
+              <div className="w-full lg:w-3/5 bg-linear-to-br from-[#1a1a1a] to-[#0a0a0a] relative flex items-center justify-center min-h-[200px] sm:min-h-[240px] lg:min-h-[350px] border-b lg:border-b-0 lg:border-r border-[#2a2a2a] p-4 sm:p-5 lg:p-8">
                 {/* Ambient glow */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">
                   <div className="w-64 h-64 bg-[#a73dff] rounded-full blur-[100px]" />
