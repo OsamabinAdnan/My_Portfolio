@@ -50,7 +50,7 @@
     {
       "name": "GSAP",
       "category": "frontend",
-      "logo": "/Techs-Logos/gsap.png"
+      "logo": "/Techs-Logos/gsap.webp"
     },
     {
       "name": "Three.js",
@@ -95,7 +95,7 @@
     {
       "name": "REST APIs",
       "category": "backend",
-      "logo": "/Techs-Logos/RestAPI.png"
+      "logo": "/Techs-Logos/RestAPI.webp"
     },
     {
       "name": "Docker",
@@ -115,12 +115,12 @@
     {
       "name": "CI/CD",
       "category": "devops",
-      "logo": "/Techs-Logos/CICD.png"
+      "logo": "/Techs-Logos/CICD.webp"
     },
     {
       "name": "Google Analytics",
       "category": "digital-marketing",
-      "logo": "/Techs-Logos/GoogleAnalytics.png"
+      "logo": "/Techs-Logos/GoogleAnalytics.webp"
     },
     {
       "name": "Google Ads",
@@ -130,22 +130,22 @@
     {
       "name": "Facebook Ads",
       "category": "digital-marketing",
-      "logo": "/Techs-Logos/facebook-ads.png"
+      "logo": "/Techs-Logos/facebook-ads.webp"
     },
     {
       "name": "SEO",
       "category": "digital-marketing",
-      "logo": "/Techs-Logos/SEO.png"
+      "logo": "/Techs-Logos/SEO.webp"
     },
     {
       "name": "Qdrant Vector Databases",
       "category": "others",
-      "logo": "/Techs-Logos/qdrant.png"
+      "logo": "/Techs-Logos/qdrant.webp"
     },
     {
       "name": "RAG Systems",
       "category": "others",
-      "logo": "/Techs-Logos/rag.png"
+      "logo": "/Techs-Logos/rag.webp"
     },
     {
       "name": "OpenAI Agent SDK",
@@ -165,7 +165,7 @@
     {
       "name": "Sanity CMS",
       "category": "others",
-      "logo": "/Techs-Logos/sanity.png"
+      "logo": "/Techs-Logos/sanity.webp"
     },
     {
       "name": "WordPress",
@@ -185,12 +185,12 @@
     {
       "name": "Gemini Code CLI",
       "category": "ai",
-      "logo": "/Techs-Logos/Gemini-cli.png"
+      "logo": "/Techs-Logos/Gemini-cli.webp"
     },
     {
       "name": "Qwen Code CLI",
       "category": "ai",
-      "logo": "/Techs-Logos/Qwen-CLI.png"
+      "logo": "/Techs-Logos/Qwen-CLI.webp"
     },
     {
       "name": "OpenAI Codex CLI",
@@ -200,12 +200,12 @@
     {
       "name": "Lovable",
       "category": "ai",
-      "logo": "/Techs-Logos/Lovable-color.png"
+      "logo": "/Techs-Logos/Lovable-color.webp"
     },
     {
       "name": "OpenClaw",
       "category": "ai",
-      "logo": "/Techs-Logos/Openclaw.png"
+      "logo": "/Techs-Logos/Openclaw.webp"
     },
     {
       "name": "OpenRouter",
@@ -215,7 +215,7 @@
     {
       "name": "HuggingFace",
       "category": "backend",
-      "logo": "/Techs-Logos/Huggingface.png"
+      "logo": "/Techs-Logos/Huggingface.webp"
     },
     {
       "name": "Elementor",
@@ -225,7 +225,7 @@
     {
       "name": "MCP Server",
       "category": "ai",
-      "logo": "/Techs-Logos/mcp.png"
+      "logo": "/Techs-Logos/mcp.webp"
     },
     {
       "name": "Shadcn UI",
