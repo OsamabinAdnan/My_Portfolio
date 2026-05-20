@@ -247,8 +247,8 @@
       "techStack": ["HTML", "CSS", "JavaScript"],
       "deploymentUrl": "https://carspoint.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/Carpoint/CarPoint.png",
-      "mockupImageUrl": "/Project-Images/Carpoint/Carpoint-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/Carpoint/CarPoint.webp",
+      "mockupImageUrl": "/Project-Images/Carpoint/Carpoint-Desktop-Mobile.webp"
     },
     {
       "id": "2",
@@ -257,8 +257,8 @@
       "techStack": ["HTML", "Tailwind CSS", "Font Awesome 6", "Google Fonts", "JavaScript"],
       "deploymentUrl": "https://scootypro.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/ScootyPro/ScootyPro.png",
-      "mockupImageUrl": "/Project-Images/ScootyPro/SccotyPro-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/ScootyPro/ScootyPro.webp",
+      "mockupImageUrl": "/Project-Images/ScootyPro/SccotyPro-Desktop-Mobile.webp"
     },
     {
       "id": "3",
@@ -267,8 +267,8 @@
       "techStack": ["HTML", "Tailwind CSS", "Font Awesome 6", "Google Fonts", "JavaScript"],
       "deploymentUrl": "https://fitzone-pro.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/FitZonePro/FitZonePro.png",
-      "mockupImageUrl": "/Project-Images/FitZonePro/FitZonePro-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/FitZonePro/FitZonePro.webp",
+      "mockupImageUrl": "/Project-Images/FitZonePro/FitZonePro-Desktop-Mobile.webp"
     },
     {
       "id": "4",
@@ -277,8 +277,8 @@
       "techStack": ["Next.js 16", "React 19", "TypeScript", "TailwindCSS", "FastAPI", "UV", "Python", "OpenAI Agents SDK", "Vercel"],
       "deploymentUrl": "https://meeting-ai-extractor-processor.vercel.app/",
       "categories": ["fullstack", "ai"],
-      "imageUrl": "/Project-Images/MeetingAI/MeetingAI.png",
-      "mockupImageUrl": "/Project-Images/MeetingAI/MeetingAI-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/MeetingAI/MeetingAI.webp",
+      "mockupImageUrl": "/Project-Images/MeetingAI/MeetingAI-Desktop-Mobile.webp"
     },
     {
       "id": "5",
@@ -287,8 +287,8 @@
       "techStack": ["Next.js 16", "React 19", "TypeScript", "TailwindCSS", "FastAPI", "UV", "Python", "OpenAI Agents SDK", "Vercel", "Supabase Database", "Sonner", "Framer Motion", "GSAP", "Three.js", "Shadcn UI", "Docker"],
       "deploymentUrl": "https://ai-proposal-writer-ten.vercel.app/",
       "categories": ["fullstack","ai"],
-      "imageUrl": "/Project-Images/AIProposalWriter/AIProposalWriter.png",
-      "mockupImageUrl": "/Project-Images/AIProposalWriter/AIProposalWriter-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/AIProposalWriter/AIProposalWriter.webp",
+      "mockupImageUrl": "/Project-Images/AIProposalWriter/AIProposalWriter-Desktop-Mobile.webp"
     },
     {
       "id": "6",
@@ -297,8 +297,8 @@
       "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI", "Sanity"],
       "deploymentUrl": "https://osamablogs-milestone3-assig.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/OsamasBlogs/Osama-Blogs.png",
-      "mockupImageUrl": "/Project-Images/OsamasBlogs/OsamasBlogs-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/OsamasBlogs/Osama-Blogs.webp",
+      "mockupImageUrl": "/Project-Images/OsamasBlogs/OsamasBlogs-Desktop-Mobile.webp"
     },
     {
       "id": "7",
@@ -307,8 +307,8 @@
       "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI", "Sanity"],
       "deploymentUrl": "https://bazariox-osamabinadnan.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/BazarioX/BazarioX.png",
-      "mockupImageUrl": "/Project-Images/BazarioX/BazarioX-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/BazarioX/BazarioX.webp",
+      "mockupImageUrl": "/Project-Images/BazarioX/BazarioX-Desktop-Mobile.webp"
     },
     {
       "id": "8",
@@ -317,8 +317,8 @@
       "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI", "Sanity", "Clerk", "Stripe", "Radix UI"],
       "deploymentUrl": "https://morentcarrentalservice.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/MorentCarRental/Morent-Car-App.png",
-      "mockupImageUrl": "/Project-Images/MorentCarRental/MorentCarRental-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/MorentCarRental/Morent-Car-App.webp",
+      "mockupImageUrl": "/Project-Images/MorentCarRental/MorentCarRental-Desktop-Mobile.webp"
     },
     {
       "id": "9",
@@ -327,8 +327,8 @@
       "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI"],
       "deploymentUrl": "https://pakistantravels.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/PakistanTravel/Pakistan-Travel-App.png",
-      "mockupImageUrl": "/Project-Images/PakistanTravel/PakistanTravel-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/PakistanTravel/Pakistan-Travel-App.webp",
+      "mockupImageUrl": "/Project-Images/PakistanTravel/PakistanTravel-Desktop-Mobile.webp"
     },
     {
       "id": "10",
@@ -337,8 +337,8 @@
       "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI"],
       "deploymentUrl": "https://portfolio-website-figma.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/PortfolioDarkTheme/Portfolio-DarkTheme.png",
-      "mockupImageUrl": "/Project-Images/PortfolioDarkTheme/PortfolioDarkTheme-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/PortfolioDarkTheme/Portfolio-DarkTheme.webp",
+      "mockupImageUrl": "/Project-Images/PortfolioDarkTheme/PortfolioDarkTheme-Desktop-Mobile.webp"
     },
     {
       "id": "11",
@@ -347,8 +347,8 @@
       "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Shadcn UI"],
       "deploymentUrl": "https://imosamabinadnan-customcss.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/PortfolioLightTheme/Portfolio-LightTheme.png",
-      "mockupImageUrl": "/Project-Images/PortfolioLightTheme/PortfolioLightTheme-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/PortfolioLightTheme/Portfolio-LightTheme.webp",
+      "mockupImageUrl": "/Project-Images/PortfolioLightTheme/PortfolioLightTheme-Desktop-Mobile.webp"
     },
     {
       "id": "12",
@@ -357,8 +357,8 @@
       "techStack": ["HTML", "CSS", "JavaScript"],
       "deploymentUrl": "https://forecast-today.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/WeatherApp/Weather-App.png",
-      "mockupImageUrl": "/Project-Images/WeatherApp/WeatherApp-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/WeatherApp/Weather-App.webp",
+      "mockupImageUrl": "/Project-Images/WeatherApp/WeatherApp-Desktop-Mobile.webp"
     },
     {
       "id": "13",
@@ -367,8 +367,8 @@
       "techStack": ["HTML", "CSS", "JavaScript"],
       "deploymentUrl": "https://todo-list-js-osamabinadnan.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/TodoListApp/Todo-App.png",
-      "mockupImageUrl": "/Project-Images/TodoListApp/TodoListApp-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/TodoListApp/Todo-App.webp",
+      "mockupImageUrl": "/Project-Images/TodoListApp/TodoListApp-Desktop-Mobile.webp"
     },
     {
       "id": "14",
@@ -377,8 +377,8 @@
       "techStack": ["HTML", "CSS", "JavaScript"],
       "deploymentUrl": "https://qrcode-generator-osamabinadnan.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/QRCodeGenerator/QRCode-App.png",
-      "mockupImageUrl": "/Project-Images/QRCodeGenerator/QRCodeGenerator-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/QRCodeGenerator/QRCode-App.webp",
+      "mockupImageUrl": "/Project-Images/QRCodeGenerator/QRCodeGenerator-Desktop-Mobile.webp"
     },
     {
       "id": "15",
@@ -387,8 +387,8 @@
       "techStack": ["Python", "Streamlit"],
       "deploymentUrl": "https://unitconverter-osamabinadnan.streamlit.app/",
       "categories": ["fullstack"],
-      "imageUrl": "/Project-Images/UnitConverter/UnitConverter.png",
-      "mockupImageUrl": "/Project-Images/UnitConverter/UnitConverter-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/UnitConverter/UnitConverter.webp",
+      "mockupImageUrl": "/Project-Images/UnitConverter/UnitConverter-Desktop-Mobile.webp"
     },
     {
       "id": "16",
@@ -397,8 +397,8 @@
       "techStack": ["Python", "Streamlit"],
       "deploymentUrl": "https://passwordgenerator-and-strengthchecker-osamabinadnan.streamlit.app/",
       "categories": ["fullstack"],
-      "imageUrl": "/Project-Images/PasswordGeneratorStrengthChecker/Password-Generator.png",
-      "mockupImageUrl": "/Project-Images/PasswordGeneratorStrengthChecker/PasswordGeneratorStrengthChecker-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/PasswordGeneratorStrengthChecker/Password-Generator.webp",
+      "mockupImageUrl": "/Project-Images/PasswordGeneratorStrengthChecker/PasswordGeneratorStrengthChecker-Desktop-Mobile.webp"
     },
     {
       "id": "17",
@@ -407,8 +407,8 @@
       "techStack": ["Python", "Streamlit", "GitHub API", "OpenAI"],
       "deploymentUrl": "https://git-profile-analyzer-osamabinadnan.streamlit.app/",
       "categories": ["ai"],
-      "imageUrl": "/Project-Images/GithubProfileAnalyzer/GithubProfileAnalyzer.png",
-      "mockupImageUrl": "/Project-Images/GithubProfileAnalyzer/GithubProfileAnalyzer-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/GithubProfileAnalyzer/GithubProfileAnalyzer.webp",
+      "mockupImageUrl": "/Project-Images/GithubProfileAnalyzer/GithubProfileAnalyzer-Desktop-Mobile.webp"
     },
     {
       "id": "18",
@@ -417,8 +417,8 @@
       "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS"],
       "deploymentUrl": "https://color-picker-ten-woad.vercel.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/ColorPickerApp/ColorPicker.png",
-      "mockupImageUrl": "/Project-Images/ColorPickerApp/ColorPickerApp-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/ColorPickerApp/ColorPicker.webp",
+      "mockupImageUrl": "/Project-Images/ColorPickerApp/ColorPickerApp-Desktop-Mobile.webp"
     },
     {
       "id": "19",
@@ -427,8 +427,8 @@
       "techStack": ["Docusaurus IO", "Neon DB", "OpenAI SDK", "Python", "Qdrant Vector DB"],
       "deploymentUrl": "https://osamabinadnan.github.io/physical-ai-humanoid-robotic-book/",
       "categories": ["fullstack", "ai"],
-      "imageUrl": "/Project-Images/PhysicalAIHumanoid/PhysicalAI-Textbook.png",
-      "mockupImageUrl": "/Project-Images/PhysicalAIHumanoid/PhysicalAIHumanoid-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/PhysicalAIHumanoid/PhysicalAI-Textbook.webp",
+      "mockupImageUrl": "/Project-Images/PhysicalAIHumanoid/PhysicalAIHumanoid-Desktop-Mobile.webp"
     },
     {
       "id": "20",
@@ -437,8 +437,8 @@
       "techStack": ["Next.js", "React", "TypeScript", "TailwindCSS", "Python", "OpenAI SDK", "Neon DB", "Vercel", "Framer Motion", "GSAP", "Sonner"],
       "deploymentUrl": "https://taskify-with-chatbot-osamabinadnan.vercel.app/",
       "categories": ["fullstack", "ai"],
-      "imageUrl": "/Project-Images/TaskifyTodoApp/TaskifyTodoApp.png",
-      "mockupImageUrl": "/Project-Images/TaskifyTodoApp/TaskifyTodoApp-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/TaskifyTodoApp/TaskifyTodoApp.webp",
+      "mockupImageUrl": "/Project-Images/TaskifyTodoApp/TaskifyTodoApp-Desktop-Mobile.webp"
     },
     {
       "id": "21",
@@ -447,8 +447,8 @@
       "techStack": ["HTML", "CSS", "JavaScript"],
       "deploymentUrl": "https://exsalesdashboard.netlify.app/",
       "categories": ["frontend"],
-      "imageUrl": "/Project-Images/ExecutiveSalesDashboard/ExecutiveSalesDashboard.png",
-      "mockupImageUrl": "/Project-Images/ExecutiveSalesDashboard/ExecutiveSalesDashboard-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/ExecutiveSalesDashboard/ExecutiveSalesDashboard.webp",
+      "mockupImageUrl": "/Project-Images/ExecutiveSalesDashboard/ExecutiveSalesDashboard-Desktop-Mobile.webp"
     },
     {
       "id": "22",
@@ -457,8 +457,18 @@
       "techStack": ["Lovable"],
       "deploymentUrl": "https://zyentic-luxury.lovable.app/",
       "categories": ["fullstack"],
-      "imageUrl": "/Project-Images/Zynetic/Zyentic.png",
-      "mockupImageUrl": "/Project-Images/Zynetic/Zyentic-Desktop-Mobile.png"
+      "imageUrl": "/Project-Images/Zynetic/Zyentic.webp",
+      "mockupImageUrl": "/Project-Images/Zynetic/Zyentic-Desktop-Mobile.webp"
+    },
+    {
+      "id": "23",
+      "title": "Clean Cut BG Remover",
+      "description": "An AI-powered background removal tool that instantly removes backgrounds from images using remove.bg API. Features drag-and-drop upload, supports PNG/JPG/WEBP formats up to 25MB, and delivers clean, professional results with a simple, intuitive interface.",
+      "techStack": ["Next.js 16", "Tailwind CSS", "TypeScript", "BG-Remover API"],
+      "deploymentUrl": "https://aibackgroundremover-gules.vercel.app/",
+      "categories": ["frontend"],
+      "imageUrl": "/Project-Images/ClearCut-BG-Remover/ClearCut.webp",
+      "mockupImageUrl": "/Project-Images/ClearCut-BG-Remover/ClearCut-Desktop-Mobile.webp"
     }
   ],
   "experience": [

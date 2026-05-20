@@ -33,6 +33,11 @@ export const metadata: Metadata = {
   description: "Agentic AI Developer & Full Stack Developer building autonomous agent systems and modern web products. Learning and Specializing in agentic workflows, RAG systems, and cloud-native app delivery.",
   keywords: ["FullStack Developer", "Agentic AI Developer", "AI Automation", "Portfolio", "AI Agents", "React", "Next.js", "Python", "FastAPI", "Digital FTEs", "RAG Systems"],
   authors: [{ name: "Osama bin Adnan" }],
+  icons: {
+    icon: "/osama-about.png",
+    shortcut: "/osama-about.png",
+    apple: "/osama-about.png",
+  },
   openGraph: {
     title: "Osama bin Adnan | Agentic AI Developer, Web Developer, Digital Marketer & Textile Engineer",
     description: "Agentic AI Developer, Web Developer, Digital Marketer & Textile Engineer building autonomous agent systems and modern web products",
