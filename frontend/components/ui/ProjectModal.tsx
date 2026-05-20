@@ -13,7 +13,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 bg-black/80 backdrop-blur-sm z-100 flex items-center justify-center p-4 sm:p-6"
+        className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6"
+        style={{ zIndex: 9999 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -22,7 +23,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
       >
         {/* Modal Container - Fits within viewport on all screens */}
         <motion.div
-          className="relative bg-[#111111] border border-[#a73dff] rounded-xl lg:rounded-2xl shadow-2xl flex flex-col w-full max-h-[85vh] max-w-6xl overflow-hidden mt-10 lg:mt-0"
+          className="relative bg-[#111111] border border-[#a73dff] rounded-xl lg:rounded-2xl shadow-2xl flex flex-col w-full max-h-[77vh] max-w-6xl overflow-hidden mt-10 lg:mt-0"
           initial={{ scale: 0.95, y: 20, opacity: 0 }}
           animate={{ scale: 1, y: 0, opacity: 1 }}
           exit={{ scale: 0.95, y: 20, opacity: 0 }}
@@ -105,7 +106,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                       Technologies
                     </h4>
                     <div className="flex flex-wrap gap-2">
-                      {project.techStack.map((tech) => (
+                      {project.techStack.slice(0, 4).map((tech) => (
                         <span
                           key={tech}
                           className="px-2.5 py-1 text-xs font-medium rounded-lg bg-[#1a1a1a] text-neutral-300 border border-[#2a2a2a] hover:border-[#a73dff]/50 hover:text-[#a73dff] transition-colors"
@@ -113,6 +114,11 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                           {tech}
                         </span>
                       ))}
+                      {project.techStack.length > 4 && (
+                        <span className="px-2.5 py-1 text-xs font-medium rounded-lg bg-[#1a1a1a] text-[#a73dff] border border-[#a73dff]/30">
+                          +{project.techStack.length - 4}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
