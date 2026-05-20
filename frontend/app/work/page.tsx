@@ -26,12 +26,13 @@ export default function WorkPage() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#1a1a1a]">
         <div className="max-w-[1280px] xl:max-w-[1400px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 py-4 flex items-center justify-between">
-          <Link href="/" className="inline-flex items-center gap-2 text-white hover:text-[#a73dff] transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-white hover:text-[#a73dff] transition-colors text-sm lg:text-base">
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            <span className="hidden sm:inline">Back to Home</span>
+            <span className="sm:hidden">Back</span>
           </Link>
-          <h1 className="text-5xl uppercase font-bold text-white">Projects</h1>
-          <div className="w-24" /> {/* Spacer for centering */}
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl uppercase font-bold text-white">Projects</h1>
+          <div className="w-16 sm:w-20 lg:w-24" /> {/* Spacer for centering */}
         </div>
       </header>
 
