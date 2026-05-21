@@ -68,7 +68,7 @@ frontend/
 ├── public/                       # Static assets
 │   ├── Project-Images/           # Project screenshots
 │   ├── Techs-Logos/              # Technology logos
-│   ├── OsamabinAdnan_Resume.pdf  # Resume PDF
+│   ├── OsamabinAdnan-Updated-Resume.pdf  # Resume PDF
 │   └── [other static files]
 │
 ├── .env.local                    # Environment variables

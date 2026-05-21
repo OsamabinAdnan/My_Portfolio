@@ -78,7 +78,7 @@ osamabinadnan/
 │   ├── public/                   # Static assets
 │   │   ├── Project-Images/       # Project screenshots
 │   │   ├── Techs-Logos/          # Technology logos
-│   │   └── OsamabinAdnan_Resume.pdf
+│   │   └── OsamabinAdnan-Updated-Resume.pdf
 │   │
 │   ├── .env.local                # Frontend environment variables
 │   ├── next.config.ts            # Next.js configuration

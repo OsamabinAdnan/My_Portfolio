@@ -131,7 +131,7 @@ export function MobileMenu() {
                   className="px-6 pb-6"
                 >
                   <a
-                    href="/OsamabinAdnan_Resume.pdf"
+                    href="/OsamabinAdnan-Updated-Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="resume-button-fill w-full justify-center"

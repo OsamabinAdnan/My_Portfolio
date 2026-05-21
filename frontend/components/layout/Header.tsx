@@ -98,7 +98,7 @@ export function Header() {
           {/* Resume & Mobile Menu */}
           <div className="hidden lg:flex items-center ml-auto">
             <a
-              href="/OsamabinAdnan_Resume.pdf"
+              href="/OsamabinAdnan-Updated-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-btn resume-button-fill"
