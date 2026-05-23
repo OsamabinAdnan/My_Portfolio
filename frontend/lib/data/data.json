@@ -236,6 +236,11 @@
       "name": "Spec-Kit-Plus",
       "category": "ai",
       "logo": "/Techs-Logos/SpecKit-Plus.webp"
+    },
+    {
+      "name": "InsForge",
+      "category": "backend",
+      "logo": "/Techs-Logos/InsForge.webp"
     }
   ],
   
@@ -469,6 +474,16 @@
       "categories": ["frontend"],
       "imageUrl": "/Project-Images/ClearCut-BG-Remover/ClearCut.webp",
       "mockupImageUrl": "/Project-Images/ClearCut-BG-Remover/ClearCut-Desktop-Mobile.webp"
+    },
+    {
+      "id": "24",
+      "title": "Personal AI CRM",
+      "description": "An AI-enhanced contact relationship manager that helps users build and maintain meaningful connections through intelligent automation. Features AI-powered summaries, smart follow-up suggestions, and interaction pattern analysis to ensure no important relationship touchpoint is missed. Built with real-time sync, secure storage, and comprehensive contact organization through tags, notes, and interaction history tracking.",
+      "techStack": ["Next.js 16", "Tailwind CSS", "TypeScript", "InsForge"],
+      "deploymentUrl": "https://ai-personal-crm.insforge.site/",
+      "categories": ["fullstack", "ai"],
+      "imageUrl": "/Project-Images/Personal-AI-CRM/Personal-AI-CRM.webp",
+      "mockupImageUrl": "/Project-Images/Personal-AI-CRM/Personal-AI-CRM-Desktop-Mobile.webp"
     }
   ],
   "experience": [
